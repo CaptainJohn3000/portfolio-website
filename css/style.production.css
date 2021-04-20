@@ -1,0 +1,735 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*COLORS USED IN STYLE SHEET 
+
+Background Color (sandstone): #b29082;
+Text Color (Black): #000000;
+Active Link Color (Blue): 2c17ce;
+Link Color (Black): #000;
+Visited Link Color (Black): #000000;
+Nav List Selected Link Color (hold click color) (Lime Green): #36ce17;
+Grid Item background-color: lightgray;
+Nav list active shadow color: #556b2f;
+
+*/
+
+/* The base styling for your typography (fonts, sizes, spacings, etc.) should always go at the top of your CSS. */
+
+/* Variable declarations BELOW HERE */
+
+/*FONT STYLING BELOW HERE */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.background {
+  background-color: #b29082;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 2% 12%;
+  line-height: 2;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  font-variant: small-caps;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/*WEBSITE BACKGROUND COLOR BELOW HERE */
+body {
+  background-color: #ffffff;
+}
+
+/*LINK COLOR, LINK VISITED COLOR, NO UNDERLINING WHEN HOVERING, SELECTED LINK COLOR <a> */
+a {
+  text-decoration: underline;
+  color: #000000;
+}
+
+/*HOVER = MOUSE HOVER OVER LINK - FOCUS = KEYBOARD HOVERING OVER LINK */
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+a:active {
+  color: #556b2f;
+}
+/* Buttons Start Here */
+button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+.button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+/* Buttons End Here */
+/* PROFILE & PORTRAIT START */
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.profile__portrait {
+  float: left;
+  width: 150px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+/* PROFILE & PORTRAIT END */
+
+/* PAGE HEADER, NAV, FOOTER START */
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 2px solid rgb(58, 55, 55);
+  padding: 2px;
+}
+.page-header__logo {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
+  max-height: 125px;
+}
+.page-header__nav:last-child {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: right;
+}
+.page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+.work-experience {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.work-experience__item {
+  margin: auto;
+}
+/* PAGE HEADER, NAV, FOOTER END */
+
+/* START NAV */
+.navigation-list {
+  list-style-type: none;
+  padding: 5px;
+}
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.navigation-list__item--active {
+  text-decoration: none;
+  text-shadow: 1px 2px #556b2f;
+}
+/* END NAV */
+
+/* START Grid Fallback */
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+/* END Grid Fallback */
+
+/* Contact Form START */ /* Yes I had some help online with this lol */
+#contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+#contact-form > input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding: 1em;
+  -webkit-box-shadow: 0px 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.standard-label {
+  margin: 1em 0;
+}
+.button {
+  background-color: #000000;
+  margin: 1em auto;
+  width: 40%;
+}
+/* Contact form END */
+
+/* GRID START */
+@supports (display: grid) {
+  .grid {
+    margin: 20px;
+    display: -ms-grid;
+    display: grid;
+    /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .grid__item {
+    background-color: #ffffff;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 20px;
+  }
+}
+/* GRID END */
+
+/* RESPONSIVE DEISGN STARTS HERE */
+/* Below RESPONSIVE DESIGN is for screens with a display smaller than 500px */
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+/* Below RESPONSIVE DESIGN is for screens with a display size of 500px - 750px */
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* Below RESPONSIVE DESIGN is the shared code for screen sizes of 0px --> 750px */
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  /* NO "last-child" currently being used for the Grid. Decided against this, I did not like the look at this time */
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+/* RESPONSIVE DESIGN ENDS HERE */
+
+/* SVG ANIMATION STARTS HERE */
+@-webkit-keyframes color-change {
+  0% {
+    fill: #edc655;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    fill: #fcffad;
+    -webkit-transform: translate(50px, 100px);
+    transform: translate(50px, 100px);
+  }
+  100% {
+    fill: #f76414;
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+}
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    fill: #fcffad;
+    -webkit-transform: translate(50px, 100px);
+    transform: translate(50px, 100px);
+  }
+  100% {
+    fill: #f76414;
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+}
+
+.sun {
+  -webkit-animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-movement {
+  from {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-movement {
+  from {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+  -webkit-animation-name: cloud-movement;
+  animation-name: cloud-movement;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+/* SVG ANIMATION ENDS HERE */ /*COLORS USED IN STYLE SHEET 
+
+Background Color (sandstone): #b29082;
+Text Color (Black): #000000;
+Active Link Color (Blue): 2c17ce;
+Link Color (Black): #000;
+Visited Link Color (Black): #000000;
+Nav List Selected Link Color (hold click color) (Lime Green): #36ce17;
+Grid Item background-color: lightgray;
+Nav list active shadow color: #556b2f;
+
+*/
+
+/* The base styling for your typography (fonts, sizes, spacings, etc.) should always go at the top of your CSS. */
+
+/* Variable declarations BELOW HERE */
+
+/*FONT STYLING BELOW HERE */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.background {
+  background-color: #b29082;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 2% 12%;
+  line-height: 2;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  font-variant: small-caps;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/*WEBSITE BACKGROUND COLOR BELOW HERE */
+body {
+  background-color: #ffffff;
+}
+
+/*LINK COLOR, LINK VISITED COLOR, NO UNDERLINING WHEN HOVERING, SELECTED LINK COLOR <a> */
+a {
+  text-decoration: underline;
+  color: #000000;
+}
+
+/*HOVER = MOUSE HOVER OVER LINK - FOCUS = KEYBOARD HOVERING OVER LINK */
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+a:active {
+  color: #556b2f;
+}
+/* Buttons Start Here */
+button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+.button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+/* Buttons End Here */
+/* PROFILE & PORTRAIT START */
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.profile__portrait {
+  float: left;
+  width: 150px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+/* PROFILE & PORTRAIT END */
+
+/* PAGE HEADER, NAV, FOOTER START */
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 2px solid rgb(58, 55, 55);
+  padding: 2px;
+}
+.page-header__logo {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
+  max-height: 125px;
+}
+.page-header__nav:last-child {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: right;
+}
+.page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+.work-experience {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.work-experience__item {
+  margin: auto;
+}
+/* PAGE HEADER, NAV, FOOTER END */
+
+/* START NAV */
+.navigation-list {
+  list-style-type: none;
+  padding: 5px;
+}
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.navigation-list__item--active {
+  text-decoration: none;
+  text-shadow: 1px 2px #556b2f;
+}
+/* END NAV */
+
+/* START Grid Fallback */
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+/* END Grid Fallback */
+
+/* Contact Form START */ /* Yes I had some help online with this lol */
+#contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+#contact-form > input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding: 1em;
+  -webkit-box-shadow: 0px 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.standard-label {
+  margin: 1em 0;
+}
+.button {
+  background-color: #000000;
+  margin: 1em auto;
+  width: 40%;
+}
+/* Contact form END */
+
+/* GRID START */
+@supports (display: grid) {
+  .grid {
+    margin: 20px;
+    display: -ms-grid;
+    display: grid;
+    /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .grid__item {
+    background-color: #ffffff;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 20px;
+  }
+}
+/* GRID END */
+
+/* RESPONSIVE DEISGN STARTS HERE */
+/* Below RESPONSIVE DESIGN is for screens with a display smaller than 500px */
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+/* Below RESPONSIVE DESIGN is for screens with a display size of 500px - 750px */
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* Below RESPONSIVE DESIGN is the shared code for screen sizes of 0px --> 750px */
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  /* NO "last-child" currently being used for the Grid. Decided against this, I did not like the look at this time */
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+/* RESPONSIVE DESIGN ENDS HERE */
+
+/* SVG ANIMATION STARTS HERE */
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    fill: #fcffad;
+    -webkit-transform: translate(50px, 100px);
+    transform: translate(50px, 100px);
+  }
+  100% {
+    fill: #f76414;
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+}
+
+.sun {
+  -webkit-animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-movement {
+  from {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+  -webkit-animation-name: cloud-movement;
+  animation-name: cloud-movement;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+/* SVG ANIMATION ENDS HERE */
+
+/* NOTES:
+Border - overwrites browser defaults and resets the border
+Font-Family: inherit - takes the font from the outer container
+Background-color - Styles the background color
+Color - Styles the font color
+Text-decoration - Styles the text decoration
+Padding/Border Radius - adds spacing to the button 
+Border-Bottom - gives the button a bottom border with a width of 2px and a type of solid and a color in rgb format.
+*/
+
+/* NOTES:
+Border - overwrites browser defaults and resets the border
+Font-Family: inherit - takes the font from the outer container
+Background-color - Styles the background color
+Color - Styles the font color
+Text-decoration - Styles the text decoration
+Padding/Border Radius - adds spacing to the button 
+Border-Bottom - gives the button a bottom border with a width of 2px and a type of solid and a color in rgb format.
+*/

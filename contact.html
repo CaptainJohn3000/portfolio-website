@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Jonathan Freeman's Portfolio" />
+    <meta name="author" content="Jonathan Freeman" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Conact Jonathan Freeman</title>
+    <link rel="shortcut icon" href="images/Working Favicon/favicon.ico" />
+    <!--Font Starts Directly Below Here-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--CSS Normalization below-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/normalize.css-master/normalize.css"
+    />
+
+    <!--CSS Style Sheet linked below here-->
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
+  <body>
+    <div class="background">
+      <header class="page-header">
+        <div>
+          <!--ADD YOUR LOGO BELOW WHEN THE TIME COMES - leaving alt="" blank for now to help with accessibility & help prevent confusion with screen readers, until actual image is used.-->
+          <img
+            src="images/logo/logo.jpg"
+            alt="logo"
+            class="page-header__logo"
+          />
+        </div>
+        <nav class="main-navigation page-header__nav">
+          <ul role="menubar" class="navigation-list">
+            <li role="presentation">
+              <a href="index.html" role="menuitem" class="navigation-list__item"
+                >Home</a
+              >
+            </li>
+            <li role="presentation">
+              <a href="about.html" role="menuitem" class="navigation-list__item"
+                >About</a
+              >
+            </li>
+            <li role="presentation">
+              <a
+                href="contact.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item--active"
+                >Contact</a
+              >
+            </li>
+            <li role="presentation">
+              <a href="work.html" role="menuitem" class="navigation-list__item"
+                >Work</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h2>Having trouble or need to get in touch?</h2>
+        <!--Form Starts here - Basic for now - Will make a nice neat form later-->
+        <!--All 3 fields have been made to be required right now-->
+        <!--Phone # pattern is specific layout EX: 404-404-4040-->
+        <form action="" method="post" id="contact-form">
+          <label class="standard-label" for="contact-email">*Email:</label>
+          <input
+            type="email"
+            id="contact-email"
+            required="required"
+            placeholder="E-Mail Address"
+          />
+
+          <label class="standard-label" for="contact-telephone"
+            >*Telephone:</label
+          >
+          <input
+            type="tel"
+            id="contact-telephone"
+            pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+            required="required"
+            placeholder="XXX-XXX-XXXX"
+          />
+
+          <label class="standard-label" for="contact-message">*Message:</label>
+          <textarea
+            maxlength="240"
+            id="contact-message"
+            required="required"
+            placeholder="240 Character Limit"
+          ></textarea>
+          <input class="button" type="submit" value="Send message" />
+          <!--*<textarea> is used to provide more space if the <input> tag isn't long enough for your needs*-->
+          <div>
+            <p>* Required Field</p>
+            <br />
+          </div>
+        </form>
+      </main>
+      <section>
+        <!--Telephone and Email link starts below here-->
+        <div class="contact-information">
+          <p>My contact information:</p>
+          Jonathan Freeman<br />
+          Mobile Phone: <a href="tel:4042264506">404-226-4506</a><br />
+          Email:
+          <a href="mailto:freeman.jonathan@icloud.com"
+            >freeman.jonathan@icloud.com</a
+          >
+        </div>
+      </section>
+      <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+          <a href="https://github.com/CaptainJohn3000" target="_blank">
+            <img
+              src="svg/iconmonstr-github-1.svg"
+              class="github"
+              alt="Github"
+            />
+          </a>
+          <a
+            href="http://www.linkedin.com/in/jonathan-freeman-1507a020a"
+            target="_blank"
+          >
+            <img
+              src="svg/iconmonstr-linkedin-3.svg"
+              class="linkedin"
+              alt="LinkedIn"
+            />
+          </a>
+        </div>
+      </footer>
+      <script src="js/tota11y.min.js"></script>
+    </div>
+  </body>
+</html>
+
+<!--Collection of Notes below - too many notes was causing difficulty reading-->
+<!--OBVIOUSLY when working with a team, notes on specific lines will be better, but for now I would like it here to be able to read the code easier while I am learning-->
+
+<!--****REVISIONS THAT NEED TO BE MADE LATER****-->
+<!--Hiding phone number instead of writing to make it harder for fake/scam calls can remove if needed -->
+<!--Formatted email that shows on page with (dot) and (at) to better hide from bots-->
+<!--Get FAVICON TO WORK ON ALL BROWSERS AND ANDROID/IOS, ETC.-->
+
+<!--Forms:-->
+<!--If 'required' is not added, like below, the input will be optional. Example below: email required, tel is not!-->
+<!--Required: Can be added as required='required' or just required and not use (='required')-->
+<!-- required='required' is a called a *KEY VALUE PAIR*, remember?-->
+<!--Adding "Required" to your <input> tag, creates a nice "Please fill in this field" tooltip! Super cool feature!-->
+<!--"REQUIRED" needs to go at the end up the first <input> EX: <input type='email' required='required' /> or it can be done in the text area for comments EX: <textarea required='required'></textarea>-->
+<!--Adding the (maxlength='240') is limiting the number or characters in the comments to 240, this is so we don't receive super long messages, and it leaves the user with just enough to get to the point, but not enough to write a story-->
+<!--Placeholder='blah blah blah' adds text to actual submission box-->
+
+<!--Other information and cool features:-->
+<!--<br /> ** STANDS FOR LINE BREAK - Pretty cool huh? -->
+<!--tel: allows you to link phone must use <a href='tel:111-111-1111'>Phone # goes here</a> code-->
+<!--similar to the telephone code, for email use <a href='mailto:freeman.jonathan@icloud.com>email address goes here</a>-->
+<!--the mailto: makes it so that clicking the email address opens their mail, create new email for whomever clicks it-->
