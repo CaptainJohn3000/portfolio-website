@@ -129,7 +129,7 @@ button:focus,
 }
 .page-header__logo {
   flex: 0 1 200px;
-  max-height: 15px;
+  max-height: 125px;
 }
 .page-header__nav:last-child {
   flex-grow: 1;
