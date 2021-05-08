@@ -123,9 +123,8 @@ button:focus,
 .page-header {
   display: flex;
   width: 100%;
-  padding: 20px;
+  padding: 16px 24px;
   border-bottom: 2px solid rgb(58, 55, 55);
-  padding: 2px;
 }
 .page-header__logo {
   flex: 0 1 200px;
@@ -140,6 +139,12 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+footer.page-footer p {
+  margin: 0;
+}
+footer.page-footer a {
+  text-decoration: none;
 }
 .work-experience {
   text-align: center;
